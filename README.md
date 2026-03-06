@@ -18,6 +18,7 @@ A [Docker Compose](https://docs.docker.com/compose/)
 ## TL;DR
 
 ```shell
+git clone --recurse-submodules https://github.com/abstecker/dpl
 docker compose build
 docker compose up
 ```
@@ -28,6 +29,18 @@ docker-compose up -d
 ```
 
 Access JupyterLab at http://localhost:8888
+
+## Submodules
+
+This repository uses git submodules. If you cloned without `--recurse-submodules`, initialize them with:
+
+```shell
+git submodule update --init
+```
+
+| Submodule | Path | Description |
+|-----------|------|-------------|
+| [course22](https://github.com/abstecker/course22) | `notebooks/course22` | course22 notebooks |
 
 ## Features
 
